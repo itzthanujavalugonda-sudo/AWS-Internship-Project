@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Internship Student Portal</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #243047;
+    }
+
+    header {
+      background: #172554;
+      color: white;
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    header h1 { margin: 0 0 8px; }
+    header p { margin: 0; }
+
+    nav {
+      background: #2563eb;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 0 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #0000000d;
+    }
+
+    .card h2 { color: #1d4ed8; }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+    }
+
+    .service {
+      background: #eff6ff;
+      padding: 18px;
+      border-radius: 10px;
+    }
+
+    .status { color: #15803d; font-weight: bold; }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #172554;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AWS Internship Project</h1>
+    <p>Student Portal and Cloud Computing Demo</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#project">Project</a>
+    <a href="#services">AWS Services</a>
+    <a href="health.html">Health Check</a>
+  </nav>
+
+  <main>
+    <section class="card" id="home">
+      <h2>Welcome to the Student Portal</h2>
+      <p>
+        This website is a demonstration application for an AWS
+        cloud computing internship project.
+      </p>
+      <p class="status">Website status: Running</p>
+    </section>
+
+    <section class="card" id="project">
+      <h2>About the Project</h2>
+      <p>
+        The objective is to deploy a web application using Amazon EC2,
+        configure networking with Amazon VPC, store files in Amazon S3,
+        and implement monitoring, security, backup, and cost control.
+      </p>
+    </section>
+
+    <section class="card" id="services">
+      <h2>AWS Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Amazon VPC</h3>
+          <p>Provides an isolated cloud network.</p>
+        </div>
+        <div class="service">
+          <h3>Amazon EC2</h3>
+          <p>Runs the website on a Linux server.</p>
+        </div>
+        <div class="service">
+          <h3>Amazon S3</h3>
+          <p>Stores application assets and archived logs.</p>
+        </div>
+        <div class="service">
+          <h3>AWS IAM</h3>
+          <p>Controls access to AWS resources.</p>
+        </div>
+        <div class="service">
+          <h3>CloudWatch</h3>
+          <p>Monitors metrics and application logs.</p>
+        </div>
+        <div class="service">
+          <h3>Amazon SNS</h3>
+          <p>Delivers monitoring alert notifications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Project Progress</h2>
+      <p>Documentation and architecture: Initial draft prepared.</p>
+      <p>Website source code: Created.</p>
+      <p>AWS deployment: Not yet completed.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>AWS Internship Project | Student Demonstration</p>
+  </footer>
+
+</body>
+</html>
